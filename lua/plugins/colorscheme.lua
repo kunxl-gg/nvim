@@ -24,9 +24,7 @@ return {
 					treesitter_context = true,
 				},
 			})
-
 			vim.cmd.colorscheme("catppuccin-macchiato")
-
 		end,
 	},
 }

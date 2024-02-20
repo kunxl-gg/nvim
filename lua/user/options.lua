@@ -32,4 +32,5 @@ vim.opt.cursorline = true
 -- Enable scrolloff
 vim.opt.scrolloff = 8
 
+-- Defining column width for current buffer
 vim.opt.colorcolumn = "80"
