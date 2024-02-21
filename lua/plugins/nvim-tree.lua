@@ -12,6 +12,10 @@ return {
     keymap.set("n", "<leader>o", "<cmd>wincmd w<CR>")
 
     -- Configuration
-    nvimtree.setup({})
+    nvimtree.setup({
+            view = {
+                relativenumber = true, 
+            }
+        })
   end
 }

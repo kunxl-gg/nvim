@@ -1,12 +1,26 @@
 -- Defining the local variables
-local map = vim.api.nvim_set_keymap
+local keymap = vim.keymap
 
 -- Normal Mode Commands 
-map("n", "U", "<C-r>", { noremap = true })
-map("n", "H", "^", { noremap = true })
-map("n", "L", "$", { noremap = true })
+keymap.set("n", "U", "<C-r>", { noremap = true })
+keymap.set("n", "H", "^", { noremap = true })
+keymap.set("n", "L", "$", { noremap = true })
 
 -- Insert Mode Commands
-map('i', 'jj', '<Esc>', { noremap = true })
+keymap.set('i', 'jj', '<Esc>', { noremap = true })
 
--- Import Telescope and its builtin module
+-- Center the buffer while navigating
+keymap.set("n", "UU", "<C-u>zz")
+keymap.set("n", "DD", "<C-d>zz")
+keymap.set("n", "%", "%zz")
+keymap.set("n", "n", "nzz")
+keymap.set("n", "N", "Nzz")
+keymap.set("n", "%", "%zz")
+keymap.set("n", "*", "*zz")
+keymap.set("n", "#", "#zz")
+
+-- Manage Buffers
+keymap.set("n", "<leader>bp", ":bp<CR>", { noremap = true })
+keymap.set("n", "<leader>bn", ":bn<CR>", { noremap = true })
+keymap.set("n", "<leader>bd", ":bdelete<CR>", { noremap = true })
+keymap.set("n", "<leader>bl", ":ls<CR>", { noremap = true })
