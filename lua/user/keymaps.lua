@@ -23,4 +23,7 @@ keymap.set("n", "#", "#zz")
 keymap.set("n", "<leader>bp", ":bp<CR>", { noremap = true })
 keymap.set("n", "<leader>bn", ":bn<CR>", { noremap = true })
 keymap.set("n", "<leader>bd", ":bdelete<CR>", { noremap = true })
-keymap.set("n", "<leader>bl", ":ls<CR>", { noremap = true })
+
+-- Splitting the windows
+keymap.set("n", "<leader>vs", ":vsplit<CR>", { noremap = true })
+keymap.set("n", "<leader>hs", ":split<CR>", { noremap = true })

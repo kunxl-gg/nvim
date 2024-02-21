@@ -8,6 +8,9 @@ vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 
+-- Making sure the help window opens vertically
+vim.o.helpheight = 20
+
 -- Set the global leader key
 vim.g.mapleader = " "
 vim.g.localmapleder = " "
