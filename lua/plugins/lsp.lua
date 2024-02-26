@@ -61,6 +61,12 @@ return {
     -- used to enable autocompletion (assign to every lsp server config)
     local capabilities = cmp_nvim_lsp.default_capabilities()
 
+    -- configure c++ server 
+    lspconfig["clangd"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
+
     -- configure html server
     lspconfig["html"].setup({
       capabilities = capabilities,
@@ -72,6 +78,12 @@ return {
             capabilities = capabilities,
             on_attach = on_attach,
         })
+
+    -- configure glsl server
+    lspconfig["glsl_analyzer"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
 
     -- configure typescript server with plugin
     lspconfig["tsserver"].setup({
