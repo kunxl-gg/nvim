@@ -27,3 +27,7 @@ keymap.set("n", "<leader>bd", ":bdelete<CR>", { noremap = true })
 -- Splitting the windows
 keymap.set("n", "<leader>vs", ":vsplit<CR>", { noremap = true })
 keymap.set("n", "<leader>hs", ":split<CR>", { noremap = true })
+
+-- Indenting the code
+keymap.set("v", "<Tab>", ":> | normal gv<CR>", { noremap = true })
+keymap.set("v", "<S-Tab>", ":< | normal gv<CR>", { noremap = true })
