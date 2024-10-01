@@ -5,7 +5,7 @@ return {
         "nvim-lua/plenary.nvim",
         "nvim-tree/nvim-web-devicons",
     },
-    config = function() 
+    config = function()
         -- Setup
         require("telescope").setup()
 
@@ -17,3 +17,4 @@ return {
         keymap.set("n", "<leader>fg", builtin.live_grep)
     end
 }
+

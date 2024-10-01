@@ -1,7 +1,3 @@
---------------------------------------------------------------------------------
--- Markdown Previewer
---------------------------------------------------------------------------------
-
 return {
 	"iamcco/markdown-preview.nvim",
 	ft = "markdown",
@@ -13,4 +9,9 @@ return {
 		"MarkdownPreview",
 		"MarkdownPreviewStop",
 	},
+    config = function()
+        local keymap = vim.keymap
+
+        keymap.set("n", "<leader>mp", ":MarkdownPreview<CR>")
+    end
 }

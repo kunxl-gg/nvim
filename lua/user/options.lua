@@ -2,7 +2,7 @@
 vim.opt.nu = true
 vim.opt.rnu = true
 
--- Set the number of spaces by tab to be 2 
+-- Set the number of spaces by tab to be 2
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
@@ -44,3 +44,6 @@ vim.opt.smartcase = true
 -- Enable incremental searching
 vim.opt.incsearch = true
 vim.opt.hlsearch = true
+
+-- Use empty space for end of buffer
+vim.opt.fillchars = { eob = " " }

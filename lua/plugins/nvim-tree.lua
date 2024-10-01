@@ -6,16 +6,16 @@ return {
   config = function()
     local nvimtree = require("nvim-tree")
 
-    -- Setting keymaps 
-    local keymap = vim.keymap    
+    -- Setting keymaps
+    local keymap = vim.keymap
     keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>")
     keymap.set("n", "<leader>o", "<cmd>wincmd w<CR>")
 
     -- Configuration
     nvimtree.setup({
-            view = {
-                relativenumber = true, 
-            }
-        })
+        view = {
+            relativenumber = true,
+        },
+    })
   end
 }

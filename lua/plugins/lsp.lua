@@ -1,6 +1,6 @@
 return {
     -- 
-  "neovim/nvim-lspconfig",
+    "neovim/nvim-lspconfig",
   event = { "BufReadPre", "BufNewFile" },
   dependencies = {
     "hrsh7th/cmp-nvim-lsp",
@@ -65,6 +65,8 @@ return {
     lspconfig["clangd"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
+            filetypes = { "c", "cpp", "objc", "objcpp" , "h", "hpp", "inl" },
+
     })
 
     -- configure html server
@@ -75,9 +77,9 @@ return {
 
     -- configure go server 
     lspconfig["gopls"].setup({
-            capabilities = capabilities,
-            on_attach = on_attach,
-        })
+        capabilities = capabilities,
+        on_attach = on_attach,
+    })
 
     -- configure glsl server
     lspconfig["glsl_analyzer"].setup({
